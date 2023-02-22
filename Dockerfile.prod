@@ -1,7 +1,5 @@
 FROM node:14.0.0 as build
 
-LABEL author="Ryan Pedersen"
-
 WORKDIR /demo-app
 
 COPY package*.json ./
