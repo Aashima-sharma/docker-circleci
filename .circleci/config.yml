@@ -13,6 +13,8 @@ workflows:
       - build_docker_image:
           requires:
             - node/test
+          post-steps:
+            - jira/notify
 
 jobs:
   build_docker_image:
