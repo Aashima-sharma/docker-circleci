@@ -31,9 +31,7 @@ jobs:
           command: |
             docker build -t your-image:$TAG .
       - jira/notify:
-          environment_type: development 
-          scan_commit_body: false 
-          job_type: build 
+          token_name: CIRCLE_TOKEN 
 
 orbs:
   node: circleci/node@4.0.0
